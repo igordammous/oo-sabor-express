@@ -1,30 +1,21 @@
 class Restaurante:
-    nome = ''
-    categoria = ''
-    ativo = False
+    restaurantes = []
+    def __init__(self, nome, categoria):
+        self.nome = nome
+        self.categoria = categoria
+        self.ativo = False
+        Restaurante.restaurantes.append(self) 
+    
+    def __str__(self):
+        return f'{self.nome.ljust(15)} | {self.categoria}'
 
-restaurante_praca = Restaurante()
-restaurante_praca.nome = 'Praça'
-restaurante_praca.categoria = 'Italiana'
+    def listar_restaurantes():
+        for restaurante in Restaurante.restaurantes:
+            print(f'{restaurante.nome.ljust(15)} | {restaurante.categoria.ljust(10)} | {restaurante.ativo}')
 
-restaurante_pizza = Restaurante()
-restaurante_pizza.nome = 'Pizza Place'
-restaurante_pizza.categoria = 'Fast Food'
-restaurante_pizza.ativo = True
 
-restaurantes = [restaurante_praca]
+restaurante_praca = Restaurante('Praça', 'Italiana')
+restaurante_pizza = Restaurante('Pizza Place', 'Fast Food')
 
-nome_do_restaurante = restaurante_praca.nome
+Restaurante.listar_restaurantes()
 
-if restaurante_praca.ativo == False:
-    print('O restaurante está inativo')
-else:
-    print('O restaurante está ativo.')
-
-if restaurante_pizza.categoria == 'Fast Food':
-    print('O restaurante é um fast food.')
-else:
-    print('O restaurante não é um fast food.')
-
-print(vars(restaurante_praca))
-print(f'Nome: {restaurante_pizza.nome}, Categoria: {restaurante_pizza.categoria}')
