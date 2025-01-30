@@ -1,25 +1,21 @@
 class Musica:
-    nome = ''
-    artista = ''
-    duracao = int
+    musicas = []
+    def __init__ (self, nome, artista, duracao):
+        self.nome = nome
+        self.artista = artista
+        self.duracao = duracao
+        Musica.musicas.append(self)
+    
+    def __str__ (self):
+        return f'{self.nome.ljust(15)} | {self.categoria}'
 
-musica_starway_to_heaven = Musica()
-musica_starway_to_heaven.nome = 'Starway to Heaven'
-musica_starway_to_heaven.artista = 'Led Zepplin'
-musica_starway_to_heaven.duracao = 483
+    def listar_musicas():
+        for musica in Musica.musicas:
+            print(f'Música: {musica.nome.ljust(20)} - Banda: {musica.artista.ljust(20)} - {musica.duracao} segundos')
 
-print(vars(musica_starway_to_heaven))
 
-musica_bohemian_rhapsody = Musica()
-musica_bohemian_rhapsody.nome = 'Bohemian Rhapsody'
-musica_bohemian_rhapsody.artista = 'Queen'
-musica_bohemian_rhapsody.duracao = 360
+musica_starway_to_heaven = Musica('Starway to Heaven', 'Led Zepplin', 483)
+musica_bohemian_rhapsody = Musica('Bohemian Rhapsody', 'Queen', 360)
+musica_i_choose_you = Musica('I Choose You', 'Forest Blakk', 178)
 
-print(vars(musica_bohemian_rhapsody))
-
-musica_i_choose_you = Musica()
-musica_i_choose_you.nome = 'I Choose You'
-musica_i_choose_you.artista = 'Forest Blakk'
-musica_i_choose_you.duracao = 178
-
-print(f'Música: {musica_i_choose_you.nome} - Banda: {musica_i_choose_you.artista} - {musica_i_choose_you.duracao} segundos')
+Musica.listar_musicas()
