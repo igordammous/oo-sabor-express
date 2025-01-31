@@ -12,15 +12,34 @@ categoria e ativo para a classe Restaurante. Também vimos que as classes permit
 
 Aprendizagem do metodo __init__ que sempre que for criar a instancia de um objeto, esse metodo é chamado e espera uma informação.
 
----
-Exemplo:
-class Musica:
-    def __init__ (self, nome, artista, duracao):
-        self.nome = nome
-        self.artista = artista
-        self.duracao = duracao
+```
 
-musica_starway_to_heaven = Musica('Starway to Heaven', 'Led Zepplin', 483)
----
+# Exemplo:
+    class Musica:
+            def __init__ (self, nome, artista, duracao):
+            self.nome = nome
+            self.artista = artista
+            self.duracao = duracao
+
+    musica_starway_to_heaven = Musica('Starway to Heaven', 'Led Zepplin', 483)
+```
 
 Aprendizagem do metodo __str__ que pega o objeto e mostra ele como forma de texto.
+
+## Aula 3 - Property e métodos de classe
+@property -> O @property em Python é um decorador que permite modificar a forma como um atributo de uma classe é acessado. Em vez de acessar diretamente o atributo, você pode definir um método que será chamado quando o atributo for acessado. Isso é útil para encapsular a lógica de leitura de um atributo, permitindo que você retorne valores formatados ou calculados.
+
+Aqui está um resumo do funcionamento do @property:
+
+* Definição: Você utiliza o @property antes de um método para indicar que ele deve ser tratado como um atributo.
+* Leitura: Quando você acessa o atributo, o método decorado com @property é chamado, permitindo que você retorne um valor personalizado.
+* Atributo Privado: É comum usar um atributo privado (com um _ no início do nome) para armazenar o valor real, evitando que ele seja acessado diretamente.
+* Setter: Se você quiser permitir que o atributo seja modificado, você pode definir um método com o decorador @<nome_do_atributo>.setter, onde <nome_do_atributo> é o nome do método decorado com @property.
+* Exemplo: Se você tem um atributo ativo, pode usar @property para retornar um emoji ou uma string que represente o estado, em vez de um simples True ou False.
+
+O uso do @property ajuda a manter o código mais organizado e a encapsular a lógica de acesso aos atributos.
+
+Exploramos como criar atributos em classes e utilizando underscore (underline) para indicar que um atributo é protegido.
+Praticamos o uso da função property em outros atributos, como categoria e ativo, proporcionando uma abordagem mais controlada e facilitando o acesso aos valores desses atributos.
+Criamos e utilizamos métodos de classe, que são métodos que agem sobre a classe como um todo, em vez de uma instância específica. No exemplo, criamos o método listar_restaurantes para exibir uma lista formatada dos restaurantes.
+Demonstramos o conceito de abstração ao utilizar a propriedade ativo para apresentar visualmente o estado ativo ou inativo de um restaurante.
