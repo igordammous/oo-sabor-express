@@ -1,7 +1,7 @@
 # Curso Python: aplicando a Orientação a Objetos
 ---
 
-Continuação de desenvolvimento do aplicativo "Sabor Express"
+Continuação de desenvolvimento em python por meio do aplicativo "Sabor Express"
 
 ## Aula 1 - Classes
 
@@ -43,3 +43,6 @@ Exploramos como criar atributos em classes e utilizando underscore (underline) p
 Praticamos o uso da função property em outros atributos, como categoria e ativo, proporcionando uma abordagem mais controlada e facilitando o acesso aos valores desses atributos.
 Criamos e utilizamos métodos de classe, que são métodos que agem sobre a classe como um todo, em vez de uma instância específica. No exemplo, criamos o método listar_restaurantes para exibir uma lista formatada dos restaurantes.
 Demonstramos o conceito de abstração ao utilizar a propriedade ativo para apresentar visualmente o estado ativo ou inativo de um restaurante.
+
+## Aula 4 - Importando classe e composição
+
