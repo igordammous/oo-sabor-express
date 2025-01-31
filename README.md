@@ -5,8 +5,9 @@ Continuação de desenvolvimento em python por meio do aplicativo "Sabor Express
 
 ## Aula 1 - Classes
 
-Criação de classes e objetos em Python. E outros pontos importantes como o conceito de atributos de uma classe, que são as características específicas de cada objeto criado a partir dessa classe. Nesta aula, aprendemos a definir atributos como nome, 
-categoria e ativo para a classe Restaurante. Também vimos que as classes permitem organizar o código de forma mais modular e reutilizável, facilitando a manutenção e o desenvolvimento de aplicações mais complexas. Continue estudando e praticando!
+* Criação de classes e objetos em Python. E outros pontos importantes como o conceito de atributos de uma classe, que são as características específicas de cada objeto criado a partir dessa classe.
+* Aprendemos a definir atributos como nome, categoria e ativo para a classe Restaurante.
+* Também vimos que as classes permitem organizar o código de forma mais modular e reutilizável, facilitando a manutenção e o desenvolvimento de aplicações mais complexas.
 
 ## Aula 2 - Construtor e instanciando objetos
 
@@ -39,10 +40,13 @@ Aqui está um resumo do funcionamento do @property:
 
 O uso do @property ajuda a manter o código mais organizado e a encapsular a lógica de acesso aos atributos.
 
-Exploramos como criar atributos em classes e utilizando underscore (underline) para indicar que um atributo é protegido.
-Praticamos o uso da função property em outros atributos, como categoria e ativo, proporcionando uma abordagem mais controlada e facilitando o acesso aos valores desses atributos.
-Criamos e utilizamos métodos de classe, que são métodos que agem sobre a classe como um todo, em vez de uma instância específica. No exemplo, criamos o método listar_restaurantes para exibir uma lista formatada dos restaurantes.
-Demonstramos o conceito de abstração ao utilizar a propriedade ativo para apresentar visualmente o estado ativo ou inativo de um restaurante.
+* Exploramos como criar atributos em classes e utilizando underscore (underline) para indicar que um atributo é protegido.
+* Praticamos o uso da função property em outros atributos, como categoria e ativo, proporcionando uma abordagem mais controlada e facilitando o acesso aos valores desses atributos.
+* Criamos e utilizamos métodos de classe, que são métodos que agem sobre a classe como um todo, em vez de uma instância específica. No exemplo, criamos o método listar_restaurantes para exibir uma lista formatada dos restaurantes.
+* Demonstramos o conceito de abstração ao utilizar a propriedade ativo para apresentar visualmente o estado ativo ou inativo de um restaurante.
 
 ## Aula 4 - Importando classe e composição
-
+* Aprendemos a importar classes em arquivos Python, utilizando essa habilidade para importar a classe Restaurante para o arquivo principal (main.py), permitindo-nos utilizar suas funcionalidades em nosso programa.
+* Exploramos ainda mais os princípios da Programação Orientada a Objetos (POO), criando uma nova classe para reforçar conceitos fundamentais. Entendemos como a criação de classes e instâncias proporciona uma estrutura organizada e modular para o código.
+* Avançamos na integração entre classes, especificamente entre as classes Restaurante e Avaliação. Agora, temos uma lista de objetos de avaliação associados a cada restaurante, demonstrando a relação e interdependência entre diferentes entidades em um sistema.
+* Utilizamos técnicas de listagem para criar funcionalidades que nos permitem visualizar as avaliações associadas a cada restaurante. Isso consolidou nosso entendimento sobre como gerenciar e apresentar dados de maneira eficiente em nossos programas.
