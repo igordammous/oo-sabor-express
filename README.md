@@ -50,3 +50,9 @@ O uso do @property ajuda a manter o código mais organizado e a encapsular a ló
 * Exploramos ainda mais os princípios da Programação Orientada a Objetos (POO), criando uma nova classe para reforçar conceitos fundamentais. Entendemos como a criação de classes e instâncias proporciona uma estrutura organizada e modular para o código.
 * Avançamos na integração entre classes, especificamente entre as classes Restaurante e Avaliação. Agora, temos uma lista de objetos de avaliação associados a cada restaurante, demonstrando a relação e interdependência entre diferentes entidades em um sistema.
 * Utilizamos técnicas de listagem para criar funcionalidades que nos permitem visualizar as avaliações associadas a cada restaurante. Isso consolidou nosso entendimento sobre como gerenciar e apresentar dados de maneira eficiente em nossos programas.
+
+## Aula 5 - Consolidando conhecimento
+* Abordamos a importância de criar docstrings no código, que são comentários incorporados diretamente no código-fonte para documentar funções, métodos, módulos ou classes.
+* Exploramos o momento adequado para criar docstrings, destacando que elas são especialmente úteis quando se desenvolve aplicações que podem ser compartilhadas com outros desenvolvedores. Documentar o propósito, parâmetros e comportamento de funções facilita a compreensão e colaboração no código.
+* Discutimos situações em que pode não ser necessário criar docstrings, como em códigos muito simples e autoexplicativos, onde o propósito das funções é óbvio ou em projetos pessoais de curto prazo.
+* Enfatizamos que a prática consistente de documentar o código através de docstrings contribui para a manutenção eficiente do código ao longo do tempo, facilitando a resolução de problemas, a implementação de novos recursos e a colaboração entre membros da equipe.
